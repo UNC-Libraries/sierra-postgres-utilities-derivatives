@@ -69,6 +69,7 @@ module Sierra
         m999.append(MARC::Subfield.new('t', item.itype_code))
         m999.append(MARC::Subfield.new('c', item.copy_num.to_s))
         m999.append(MARC::Subfield.new('o', item.checkout_total.to_s))
+        m999.append(MARC::Subfield.new('h', item.holds.length.to_s))
 
         if item.due_date
           m999.append(MARC::Subfield.new('d', item.due_date.strftime('%F %T%:::z')))

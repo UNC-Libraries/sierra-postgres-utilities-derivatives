@@ -172,6 +172,17 @@ module Sierra
           expect(item_m999['o']).to eq('19')
         end
 
+        it 'sets $h to count of holds' do
+          item.set_data(:holds, [build(:hold)])
+          expect(item_m999['h']).to eq('1')
+        end
+
+        context 'when no holds exist' do
+          it 'still sets $h to count of holds' do
+            expect(item_m999['h']).to eq('0')
+          end
+        end
+
         context 'when item is checked out' do
           it 'sets $d to due date (YYYMMDD)' do
             item.set_data(:checkout, build(:checkout))
