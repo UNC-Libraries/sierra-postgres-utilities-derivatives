@@ -13,7 +13,7 @@ module Sierra
         b
       end
 
-      let(:alt) { Sierra::DerivativeBib.new(bib) }
+      let(:alt) { Sierra::Derivatives::DerivativeRecord.new(bib) }
 
       let(:xml) do
         <<~XML
