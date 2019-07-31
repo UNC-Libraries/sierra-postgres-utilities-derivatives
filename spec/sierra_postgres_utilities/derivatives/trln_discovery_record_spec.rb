@@ -176,7 +176,7 @@ module Sierra
           it 'sets $d to due date (YYYMMDD)' do
             item.set_data(:checkout, build(:checkout))
             item_m999 = trln.item_m999(item)
-            expect(item_m999['d']).to eq('20190102')
+            expect(item_m999['d']).to eq('2019-01-02 00:00:00-05')
           end
         end
 

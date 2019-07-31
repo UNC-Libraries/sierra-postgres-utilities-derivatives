@@ -71,7 +71,7 @@ module Sierra
         m999.append(MARC::Subfield.new('o', item.checkout_total.to_s))
 
         if item.due_date
-          m999.append(MARC::Subfield.new('d', item.due_date.strftime('%Y%m%d')))
+          m999.append(MARC::Subfield.new('d', item.due_date.strftime('%F %T%:::z')))
         end
 
         item.barcodes.each do |barcode|
