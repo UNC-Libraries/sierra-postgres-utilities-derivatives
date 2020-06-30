@@ -68,9 +68,10 @@ module Sierra
         if smarc.bad_008_length?
             warn("This bib's 008 field is not 40 characters long, which it should be. Report to cataloging staff to fix 008 field.")
         end
-        unless @sierra.lang008[1]
+        lang008 = smarc.language_from_008
+        unless lang008 && lang008[1]
           # require valid language code, but allow discontinued language codes
-          warn("This bib 008/35-37 (language_code) is #{@sierra.lang008[0]} which is not a valid language code. Report to cataloging staff to fix 008 field.")
+          warn("This bib 008/35-37 (language_code) is #{lang008[0]} which is not a valid language code. Report to cataloging staff to fix 008 field.")
         end
 
         # check 245
