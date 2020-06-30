@@ -86,7 +86,7 @@ module Sierra
         end
 
         # check 300
-        if @marc.count('300') == 0 && @sierra.blvl !~ /b|i|s/
+        if smarc.count('300') == 0 && @sierra.blvl !~ /b|i|s/
           warn('This mono bib does not contain an 300 field, which we need for HathiTrust. Report to cataloging staff to fix 300 field.')
         end
         if smarc.m300_without_a? && @sierra.blvl !~ /b|i|s/
