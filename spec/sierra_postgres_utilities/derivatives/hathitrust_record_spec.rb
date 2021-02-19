@@ -80,6 +80,7 @@ module Sierra
 
         # nothing special about b1841152a
         it 'produces expected xml for b1841152a' do
+          srec.marc = MARC::Reader.new('spec/data/b1841152a.mrc').to_a.first
           expect(rec.xml).to eq(expected)
         end
       end
