@@ -51,7 +51,13 @@ module Sierra
 
       let(:metadata_c) { build(:metadata_c) }
       let(:data_c) { build(:data_c) }
-      let(:hrec) { newrec(Sierra::Data::Holdings, metadata_c, data_c) }
+      let(:hrec) do
+        h = newrec(Sierra::Data::Holdings, metadata_c, data_c)
+        h.set_data(:cards, [build(:holdings_card)])
+        h.set_data(:locations, [build(:loc_ddda)])
+        h.set_data(:varfields, [build(:varfield_852)])
+        h
+      end
 
       let(:metadata_o) { build(:metadata_o) }
       let(:data_o) { build(:data_o) }
@@ -305,7 +311,7 @@ module Sierra
         end
 
         it 'sets $b to location' do
-          expect(hrec_m999['b']).to eq('nohr')
+          expect(hrec_m999['b']).to eq('ddda')
         end
 
         it 'sets $c to hcard_ct as string' do
