@@ -69,6 +69,22 @@ module Sierra
         end
       end
 
+      describe 'modifiable_altmarc' do
+        it 'returns altmarc' do
+          copied_altmarc = alt.modifiable_altmarc
+          expect(copied_altmarc['001'].value).to eq(bib.bnum_trunc)
+        end
+
+        it 'modifications to the return value are not reflected in #altmarc', :aggregate_failures do
+          copied_altmarc = alt.modifiable_altmarc
+          expect(copied_altmarc['001'].value).to be_truthy
+          copied_altmarc.fields.delete_if { |f| f.tag == '001' }
+
+          expect(alt.altmarc['001']).to be_truthy
+          expect(copied_altmarc['001']).to be_falsey
+        end
+      end
+
       describe '#xml' do
         it 'returns altmarc as xml' do
           expect(alt.xml).to eq(File.read('spec/data/b1841152a.altmarc.xml'))
