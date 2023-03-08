@@ -52,6 +52,18 @@ module Sierra
         @altmarc ||= get_alt_marc
       end
 
+
+      # Returns altmarc that we subsequently deference. It can be modified by
+      # consuming objects without tainting the altmarc on this object.
+      # It avoids having to make a deep copy of the marc before modifying,
+      # at the cost of having to regenerate the altmarc on this DerivativeRecord
+      # if it is subsequently needed
+      def modifiable_altmarc
+        marc_to_pass_on = altmarc
+        @altmarc = nil
+        marc_to_pass_on
+      end
+
       # Transforms Sierra's marc for a bib.
       #
       # This transformation is used for submitting MARC to HathiTrust for bibs
