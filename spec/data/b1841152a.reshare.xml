@@ -1,0 +1,85 @@
+<record>
+  <leader>00469cam  2200169Ia 4500</leader>
+  <controlfield tag='001'>b2661010</controlfield>
+  <controlfield tag='003'>NcU</controlfield>
+  <controlfield tag='005'>19820807000000.0</controlfield>
+  <controlfield tag='008'>820807s1981    enk           000 1 eng d</controlfield>
+  <datafield tag='020' ind1=' ' ind2=' '>
+    <subfield code='a'>0094643407</subfield>
+  </datafield>
+  <datafield tag='035' ind1=' ' ind2=' '>
+    <subfield code='a'>(OCoLC)8671134</subfield>
+  </datafield>
+  <datafield tag='040' ind1=' ' ind2=' '>
+    <subfield code='a'>NOC</subfield>
+    <subfield code='c'>NOC</subfield>
+  </datafield>
+  <datafield tag='100' ind1='1' ind2=' '>
+    <subfield code='a'>Fassnidge, Virginia.</subfield>
+  </datafield>
+  <datafield tag='245' ind1='1' ind2='0'>
+    <subfield code='a'>Something else :</subfield>
+    <subfield code='b'>a novel /</subfield>
+    <subfield code='c'>Virginia Fassnidge.</subfield>
+  </datafield>
+  <datafield tag='260' ind1=' ' ind2=' '>
+    <subfield code='a'>London :</subfield>
+    <subfield code='b'>Constable,</subfield>
+    <subfield code='c'>1981.</subfield>
+  </datafield>
+  <datafield tag='300' ind1=' ' ind2=' '>
+    <subfield code='a'>152 p. ;</subfield>
+    <subfield code='c'>23 cm.</subfield>
+  </datafield>
+  <datafield tag='907' ind1=' ' ind2=' '>
+    <subfield code='a'>b2661010</subfield>
+  </datafield>
+  <datafield tag='908' ind1=' ' ind2=' '>
+    <subfield code='a'>8671134</subfield>
+  </datafield>
+  <datafield tag='999' ind1='9' ind2='1'>
+    <subfield code='i'>i2661010</subfield>
+    <subfield code='l'>trln</subfield>
+    <subfield code='s'>-</subfield>
+    <subfield code='t'>0</subfield>
+    <subfield code='c'>1</subfield>
+    <subfield code='o'>19</subfield>
+    <subfield code='h'>0</subfield>
+    <subfield code='b'>00001254305</subfield>
+    <subfield code='p'>090##</subfield>
+    <subfield code='q'>|aPR6056.A82 S6</subfield>
+  </datafield>
+  <datafield tag='999' ind1='9' ind2='2'>
+    <subfield code='a'>c1210690</subfield>
+    <subfield code='b'>trln</subfield>
+    <subfield code='c'>0</subfield>
+  </datafield>
+  <datafield tag='999' ind1='9' ind2='3'>
+    <subfield code='0'>c1210690</subfield>
+    <subfield code='2'>852</subfield>
+    <subfield code='3'>c</subfield>
+    <subfield code='b'>555521</subfield>
+    <subfield code='h'>HC111</subfield>
+    <subfield code='i'>.B27</subfield>
+  </datafield>
+  <datafield tag='999' ind1='9' ind2='3'>
+    <subfield code='0'>c1210690</subfield>
+    <subfield code='2'>853</subfield>
+    <subfield code='3'>y</subfield>
+    <subfield code='8'>1</subfield>
+    <subfield code='a'>(year)</subfield>
+  </datafield>
+  <datafield tag='999' ind1='9' ind2='3'>
+    <subfield code='0'>c1210690</subfield>
+    <subfield code='2'>863</subfield>
+    <subfield code='3'>h</subfield>
+    <subfield code='8'>1.1</subfield>
+    <subfield code='a'>1971</subfield>
+  </datafield>
+  <datafield tag='999' ind1='0' ind2='0'>
+    <subfield code='a'>2005-07-13 00:00:00-04</subfield>
+    <subfield code='c'>2004-11-04 12:55:00-05</subfield>
+    <subfield code='u'>2018-10-11 07:30:34-04</subfield>
+    <subfield code='m'>a</subfield>
+  </datafield>
+</record>

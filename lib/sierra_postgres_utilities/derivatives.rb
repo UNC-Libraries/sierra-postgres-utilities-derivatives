@@ -9,6 +9,7 @@ module Sierra
 
     autoload :GoogleBooksRecord, 'sierra_postgres_utilities/derivatives/google_books_record'
     autoload :HathitrustRecord, 'sierra_postgres_utilities/derivatives/hathitrust_record'
+    autoload :ReshareRecord, 'sierra_postgres_utilities/derivatives/reshare_record'
     autoload :TRLNDiscoveryRecord, 'sierra_postgres_utilities/derivatives/trln_discovery_record'
 
     require_relative 'data/records/bib'
