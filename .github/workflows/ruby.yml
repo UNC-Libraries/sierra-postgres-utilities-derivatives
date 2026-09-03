@@ -13,9 +13,7 @@ jobs:
     strategy:
       fail-fast: false
       matrix:
-        # "3.0" must be quoted: https://github.com/actions/runner/issues/849
-        # Add Ruby 3.4 after sierra_postgres_utilities 0.3.8 is released.
-        ruby: ['3.0', 3.1, 3.2, 3.3]
+        ruby: [3.1, 3.2, 3.3, 3.4]
     steps:
     - uses: actions/checkout@v4
     - uses: ruby/setup-ruby@v1
